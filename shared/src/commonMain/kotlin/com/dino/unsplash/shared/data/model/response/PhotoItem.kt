@@ -6,25 +6,25 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class PhotoItem(
     @SerialName("blur_hash")
-    val blurHash: String,
+    val blurHash: String?,
     @SerialName("color")
-    val color: String,
+    val color: String?,
     @SerialName("created_at")
-    val createdAt: String,
+    val createdAt: String?,
     @SerialName("description")
-    val description: String,
+    val description: String?,
     @SerialName("height")
-    val height: Int,
+    val height: Int?,
     @SerialName("id")
-    val id: String,
+    val id: String?,
     @SerialName("liked_by_user")
-    val likedByUser: Boolean,
+    val likedByUser: Boolean?,
     @SerialName("likes")
-    val likes: Int,
+    val likes: Int?,
     @SerialName("updated_at")
-    val updatedAt: String,
+    val updatedAt: String?,
     @SerialName("urls")
     val urls: UrlsItem?,
     @SerialName("width")
-    val width: Int
+    val width: Int?
 )
