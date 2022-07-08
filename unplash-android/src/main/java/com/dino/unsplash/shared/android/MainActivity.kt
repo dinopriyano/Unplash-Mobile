@@ -2,12 +2,19 @@ package com.dino.unsplash.shared.android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.activity.compose.setContent
+import com.dino.unsplash.shared.android.presentation.NavGraphs
+import com.dino.unsplash.shared.android.theme.UnplashTheme
+import com.ramcosta.composedestinations.DestinationsNavHost
 
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContent {
+            UnplashTheme {
+                DestinationsNavHost(navGraph = NavGraphs.root)
+            }
+        }
     }
 }

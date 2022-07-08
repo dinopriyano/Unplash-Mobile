@@ -10,6 +10,6 @@ data class Photo(
     val likedByUser: Boolean,
     val likes: Int,
     val updatedAt: String,
-    val urls: Urls?,
+    val urls: Urls,
     val width: Int
 )
