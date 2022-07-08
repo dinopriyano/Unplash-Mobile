@@ -3,6 +3,8 @@ package com.dino.unsplash.shared.di
 import com.dino.unsplash.shared.data.model.response.ApiException
 import com.dino.unsplash.shared.data.remote.PhotoApi
 import com.dino.unsplash.shared.data.remote.PhotoApiClient
+import com.dino.unsplash.shared.di.feature.photoModule
+import com.dino.unsplash.shared.ktorEngineModule
 import io.ktor.client.*
 import io.ktor.client.engine.*
 import io.ktor.client.plugins.*
@@ -19,7 +21,9 @@ fun initKoin(appDeclaration: KoinAppDeclaration = {}): KoinApplication {
     return startKoin {
         appDeclaration()
         modules(
-
+            remoteModule,
+            ktorEngineModule(),
+            photoModule
         )
     }
 }
