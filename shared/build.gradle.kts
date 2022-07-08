@@ -1,12 +1,17 @@
+import com.codingfeline.buildkonfig.compiler.FieldSpec.Type
+import java.util.*
+import java.io.*
+
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
     kotlin("plugin.serialization") version "1.6.20"
-    id("io.realm.kotlin") version "0.11.1"
+    id("io.realm.kotlin")
     id("com.rickclephas.kmp.nativecoroutines") version "0.11.4"
     id("koin")
     id("dev.icerock.moko.kswift") version "0.5.0"
+    id("com.codingfeline.buildkonfig")
 }
 
 version = "1.0" //cocoapods version
@@ -31,7 +36,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("io.realm.kotlin:library-base:0.11.1")
+                implementation("io.realm.kotlin:library-base:1.0.1")
                 implementation("io.insert-koin:koin-core:3.1.4")
 
                 implementation("io.ktor:ktor-client-core:2.0.0")
@@ -109,4 +114,23 @@ android {
 kswift {
     install(dev.icerock.moko.kswift.plugin.feature.SealedToSwiftEnumFeature)
     install(dev.icerock.moko.kswift.plugin.feature.PlatformExtensionFunctionsFeature)
+}
+
+buildkonfig {
+    packageName = "com.dino.unsplash.shared"
+    val localPropertiesFile = rootProject.file("local.properties")
+    val localProperties = Properties()
+    localProperties.load(FileInputStream(localPropertiesFile))
+    defaultConfigs {
+        buildConfigField(
+            Type.STRING,
+            "SECRET_KEY",
+            localProperties["unplashSecretKey"] as String
+        )
+        buildConfigField(
+            Type.STRING,
+            "ACCESS_KEY",
+            localProperties["unplashAccessKey"] as String
+        )
+    }
 }
