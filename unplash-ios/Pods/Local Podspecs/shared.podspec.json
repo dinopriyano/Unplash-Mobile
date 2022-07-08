@@ -1,21 +1,21 @@
 {
   "name": "shared",
   "version": "1.0",
-  "homepage": "Link to the Shared Module homepage",
+  "homepage": "https://github.com/dinopriyano/Unplash-Mobile",
   "source": {
     "http": ""
   },
   "authors": "",
   "license": "",
-  "summary": "Some description for the Shared Module",
-  "vendored_frameworks": "build/cocoapods/framework/shared.framework",
+  "summary": "Shared Module for Unplash iOS App",
+  "vendored_frameworks": "build/cocoapods/framework/Shared.framework",
   "libraries": "c++",
   "platforms": {
     "ios": "14.1"
   },
   "pod_target_xcconfig": {
     "KOTLIN_PROJECT_PATH": ":shared",
-    "PRODUCT_MODULE_NAME": "shared"
+    "PRODUCT_MODULE_NAME": "Shared"
   },
   "script_phases": [
     {

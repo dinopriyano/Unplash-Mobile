@@ -40,8 +40,8 @@
 		06C9BE4CFA5A24D470E7A79C6C82928C /* Pods-unplash-ios */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-unplash-ios"; path = Pods_unplash_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADDEBFDE64C04985ED74E166ADE2917 /* Pods-unplash-ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-unplash-ios-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3C6FA7BF3A6F6CC0D7413F6EABB110C5 /* Pods-unplash-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-unplash-ios-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D1575D63F4B474B57EA9C17533DF824 /* Shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Shared.framework; path = build/cocoapods/framework/Shared.framework; sourceTree = "<group>"; };
 		5CD234174C7EB9BDF2D66E02A5457C61 /* Pods-unplash-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-unplash-ios-dummy.m"; sourceTree = "<group>"; };
-		6FB3A3B69B9B5C188F6DD8A242DF104C /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		97F7AB097585BBE494C7C509AE9AF10B /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -84,7 +84,7 @@
 		1B024EA702EC5FFC1DD70F1DE90B9CC4 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				FE15E7DCF560347718D53A492DCE9369 /* Frameworks */,
+				FC48D35DE68136DD35E1303927BBE263 /* Frameworks */,
 				8C8537F5399853C322993CACA195BF5B /* Pod */,
 				B9F4BFD5D605027AA43E5352CF9BDF7A /* Support Files */,
 			);
@@ -161,10 +161,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE15E7DCF560347718D53A492DCE9369 /* Frameworks */ = {
+		FC48D35DE68136DD35E1303927BBE263 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6FB3A3B69B9B5C188F6DD8A242DF104C /* shared.framework */,
+				3D1575D63F4B474B57EA9C17533DF824 /* Shared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
