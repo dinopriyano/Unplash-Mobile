@@ -2,4 +2,7 @@ target 'unplash-ios' do
   use_frameworks!
   platform :ios, '14.1'
   pod 'shared', :path => '../shared'
+  pod 'KMPNativeCoroutinesCombine'
+  pod 'netfox'
+  pod 'SDWebImageSwiftUI'
 end

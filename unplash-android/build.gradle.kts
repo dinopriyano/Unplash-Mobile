@@ -4,7 +4,7 @@ plugins {
     kotlin("kapt")
     id("kotlin-parcelize")
     id("kotlin-android")
-    id("com.google.devtools.ksp") version "1.7.0-1.0.6"
+    id("com.google.devtools.ksp") version "1.6.20-1.0.5"
 }
 
 android {
@@ -32,7 +32,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.2.0"
+        kotlinCompilerExtensionVersion = "1.2.0-rc01"
     }
 
     kotlinOptions {
