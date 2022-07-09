@@ -31,13 +31,11 @@ I use Rest API from [Unplash API](https://api.unplash.com) for the data source.
 
 I made it with Clean architecture, Design Pattern, Networking with Ktor, Reactive Programming with Coroutines Flow for Android and Combine for iOS, Dependency Injection with Koin, and many things.
 
-For the 3rd Party Library i used in this project, you can look [here](#dependencies), and for the Tech Stack, i used the MVVM Architecture Pattern, Dependency Injection, and so many things that you can see at [here](#tech-stack).
-
 Thank you very much :)
 
 ## Requirement
 
-- MacOS (for iOS apps)
+- MacOS (for XCode)
 - Android Studio (Recommended Android Studio Chipmunk)
 - Kotlin 1.6.20
 - XCode (Recommended XCode 13.3.1)
@@ -59,7 +57,7 @@ Thank you very much :)
 3. Register or login to Unplash Developer Page
     For the tutorial, read [here](https://unsplash.com/documentation#creating-a-developer-account)
 
-4. Put ur Unplash Access Key and Secret Key on local.properties
+4. Put ur Unplash Access Key and Secret Key on `local.properties`
 ```
     unplashAccessKey=PUT_UR_ACCESS_KEY_HERE
     unplashSecretKey=PUT_UR_SECRET_KEY_HERE
