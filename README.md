@@ -6,6 +6,7 @@
 </p>
 <p align="center">
   <a href="http://developer.android.com/index.html"><img alt="Platform" src="https://img.shields.io/badge/platform-Android-green.svg"></a>
+  <a href="https://developer.apple.com"><img alt="Platform" src="https://img.shields.io/badge/platform-iOS-white.svg"></a>
   <a href="http://kotlinlang.org"><img alt="Kotlin" src="https://img.shields.io/badge/kotlin-1.6.20-blue.svg"></a>
   <a href="https://developer.android.com/studio/releases/gradle-plugin"><img alt="Gradle" src="https://img.shields.io/badge/gradle-7.2.1-yellow.svg"></a>
   <a href="https://www.apache.org/licenses/LICENSE-2.0.html"><img alt="License" src="https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square"></a>
