@@ -29,7 +29,7 @@ This project is made to practice KMM (Kotlin Multiplatform Mobile).
 
 I use Rest API from [Unsplash API](https://api.unsplash.com) for the data source.
 
-I made it with Clean architecture, Design Pattern, Networking with Ktor, Reactive Programming with Coroutines Flow for Android and Combine for iOS, Dependency Injection with Koin, and many things.
+I made it with Clean architecture, Design Pattern, Networking using Ktor, Reactive Programming using Coroutines Flow for Android and Combine for iOS, Dependency Injection using Koin, and many things.
 
 Thank you very much :)
 
